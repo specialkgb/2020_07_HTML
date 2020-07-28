@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Selector_3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        div {
+            border : 1px solid green;
+            margin : 15px;
+        }
+
+        #d2 {
+            padding : 20px;
+        }
+        #d3{
+            border : 5px solid blue;
+        }
+        #d4{
+            border:3px dashed red;
+        }
+        #d5 {
+            border : 1px solid green;
+            border-radius: 30px;
+            padding:20px;
+        }
+        /*
+        width, height : block형 tag에만 적용가능한 속성
+        (inline 속성은 content에 따라서 자동으로 크기가 지정되므로
+        별도로 width와 height를 지정할 수 없다.)
+        */
+        #d6 {
+            border:1px solid blue;
+            width:200px;
+            height:200px;
+            border-radius: 50%;
+        }
+        /*
+        display 속성
+        원래 div tag는 block속성으로서 크기를 변경해도
+        화면의 한 줄을 자신의 영역으로 만드는 성질을 가지고 있다.
+        이 성질을 display:block 이라고 한다.
+        block display성질을 inline-block으로 변경을 하게 되면
+        block의 설정을 가지고 있으면서 width, height로 지정한 부분만큼만
+        영역을 차지하는 tag로 성질을 변경할 수 있다.
+        이러한 특성을 활용하여 DIV tag로 반응형 페이즈를 구현한다.
+        */
+        .dc7 {
+            display: inline-block;
+            border:1px solid green;
+            width:100px;
+            height: 100px;
+        }
+
+        p {
+            border : 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div id ="d1" class = "dc"> div box1</div>
+    <div id ="d2" class = "dc"> div box2</div>
+    <div id ="d3" class = "dc"> div box3</div>
+    <div id ="d4" class = "dc"> div box4</div>
+    <div id ="d5" class = "dc"> div box5</div>
+    <div id ="d6" class = "dc"> div box6</div>
+
+    <div id ="d7" class = "dc7"> div box7</div>
+    <div id ="d8" class = "dc7"> div box8</div>
+    <div id ="d9" class = "dc7"> div box9</div>
+    <div id ="d10" class = "dc7"> div box10</div>
+    <div id ="d11" class = "dc7"> div box11</div>
+
+    <p id = "p1" class ="pc"> p box1 </p>
+    <p id = "p2" class ="pc"> p box2 </p>
+    <p id = "p3" class ="pc"> p box3 </p>
+        id = "p" class="pc"
+</body>
+</html>
