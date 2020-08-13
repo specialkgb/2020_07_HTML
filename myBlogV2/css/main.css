@@ -75,6 +75,12 @@ margin, padding 의 값 지정
     background-image: url("images/img_001.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+
+    background-color: #ffffff;
+
+    background-color: rgb(255,255,255);
+    
+    background-color: rgba(red, green, blue, 0.5);
 }
 #blog_body:hover {
     background-image: url("images/img_002.jpg");
@@ -92,7 +98,7 @@ margin, padding 의 값 지정
     padding: 8px;
 }
 footer {
-    background-color: blue;
+    background-color: rgb(17, 17, 15);
     text-align: center;
     padding: 8px;
     color: greenyellow;
